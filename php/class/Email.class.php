@@ -35,7 +35,6 @@ class Email
 		//$mail->addAddress($details['staffNameFirst'].'.'.$details['staffNameLast'].'@gap-personnel.com', $details['staffNameFirst'].' '.$details['staffNameLast']);     // Add a recipient
 
 		if ($to == "head_office") {
-			echo "******IN HERE******";
 			$contact = explode(' ', $_SESSION['form']['contact']);
 			$mail->Subject = $branch['branchName'].' Out Of Hours Call';
 			$mail->addAddress($contact[0].'.'.$contact[1].'@gap-personnel.com', $_SESSION['login']['staffNameFirst'].' '.$_SESSION['login']['staffNameLast']);     // Add a recipient
