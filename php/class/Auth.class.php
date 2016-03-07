@@ -40,13 +40,13 @@ class Auth
 				if (isset($user['access'])) {
 					$timestamp = time();
 					$_SESSION['login'] = array('access' => $user['access'], 
-												'fulltime' => $user['fulltime'], 
-												'staffNameFirst' => $user['staffNameFirst'], 
-												'staffNameLast' => $user['staffNameLast'], 
-												'staffID' => $user['staffID'], 
-												'username' => $user['username'], 
-												'branchID' => $user['branchID'],
-												'timestamp' => $timestamp);
+									'fulltime' => $user['fulltime'], 
+									'staffNameFirst' => $user['staffNameFirst'], 
+									'staffNameLast' => $user['staffNameLast'], 
+									'staffID' => $user['staffID'], 
+									'username' => $user['username'], 
+									'branchID' => $user['branchID'],
+									'timestamp' => $timestamp);
 					
 					header("location: /pages/Home.php");
 				}
