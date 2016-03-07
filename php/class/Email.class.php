@@ -23,12 +23,12 @@ class Email
 		//$mail->SMTPDebug = 3;                               		// Enable verbose debug output
 
 		$mail->isSMTP();                                      		// Set mailer to use SMTP
-		$mail->Host = '81.171.135.240';  		  					// Specify main and backup SMTP servers
+		$mail->Host = '';  		  					// Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               		// Enable SMTP authentication
 		$mail->Username = $details['staffNameFirst'].'.'.$details['staffNameLast'].'@gap-personnel.com';                 // SMTP username
 		$mail->Password = $details['emailPassword'];                          	// SMTP password
 		//$mail->SMTPSecure = 'tls';                            	// Enable TLS encryption, `ssl` also accepted
-		$mail->Port = 62225;                                    	// TCP port to connect to
+		$mail->Port = ;                                    	// TCP port to connect to
 
 		$mail->From = $details['staffNameFirst'].'.'.$details['staffNameLast'].'@gap-personnel.com';
 		$mail->FromName = $details['staffNameFirst'].' '.$details['staffNameLast'];
